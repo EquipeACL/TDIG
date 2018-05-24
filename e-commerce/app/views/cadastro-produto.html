@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<!-- Google font -->
+ 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+ 		<!-- Bootstrap -->
+ 		<link type="text/css" rel="stylesheet" href="../public/css/bootstrap.min.css"/>
+
+ 		<!-- Slick -->
+ 		<link type="text/css" rel="stylesheet" href="../public/css/slick.css"/>
+ 		<link type="text/css" rel="stylesheet" href="../public/css/slick-theme.css"/>
+
+ 		<!-- nouislider -->
+ 		<link type="text/css" rel="stylesheet" href="../public/css/nouislider.min.css"/>
+
+ 		<!-- Font Awesome Icon -->
+ 		<link rel="stylesheet" href="../public/css/font-awesome.min.css">
+
+ 		<!-- Custom stlylesheet -->
+ 		<link type="text/css" rel="stylesheet" href="../public/css/style.css"/>
+
+
+    </head>
+	<body>
+		<header>
+			<div id="header" class="row">
+					<div class="row">
+					<div class="container-fluied">
+						<div class="col-md-2">
+							<a href="#" style="padding-left: 50px">
+								<img alt="InfoSupri" src="../public/img/logo.png"/>
+							</a>
+						</div>
+						<div class="col-md-2">
+							<ul class="nav  navbar-nav">
+								<li><a href="#" class="js-sidebar-toggle"><i class="fa  fa-bars"></i></a></li>
+							</ul>
+					  	</div>
+					</div>
+						<div class="col-md-3"></div>					
+						<div class="col-md-3"><h5 style="color:white">Bem vindo, usuário logado.</h5></div>
+					</div>
+			</div>
+		</header>
+		
+		<div class="section">
+			
+			<div class="container col-md-2">
+				<nav class="aw-menu  js-menu">
+      <ul class="aw-menu__list">
+
+        <li class="aw-menu__item  is-active is-expanded">
+          <a href="#">
+            <i class="fa  fa-fw  fa-file-text"></i><span>Produtos</span>
+            <i class="aw-menu__navigation-icon  fa"></i>
+          </a>
+      
+          <ul class="aw-menu__list  aw-menu__list--sublist">
+            <li class="aw-menu__item  aw-menu__item--link"><a href="cadastro-produto.html">Cadastro de produto</a></li>
+            <li class="aw-menu__item  aw-menu__item--link "><a href="pesquisa-produtos.html">Pesquisa de produtos</a></li>
+          </ul>
+        </li>
+
+        <li class="aw-menu__item  is-active is-expanded">
+          <a href="#">
+            <i class="fa  fa-fw  fa-file-text"></i><span>Categoria</span>
+            <i class="aw-menu__navigation-icon  fa"></i>
+          </a>
+      
+          <ul class="aw-menu__list  aw-menu__list--sublist">
+            <li class="aw-menu__item  aw-menu__item--link"><a href="cadastro-produto.html">Cadastro de categoria</a></li>
+            <li class="aw-menu__item  aw-menu__item--link "><a href="pesquisa-produtos.html">Pesquisa de categoria</a></li>
+          </ul>
+        </li>
+
+        <li class="aw-menu__item  is-active is-expanded">
+          <a href="#">
+            <i class="fa  fa-fw  fa-file-text"></i><span>Usuários</span>
+            <i class="aw-menu__navigation-icon  fa"></i>
+          </a>
+      
+          <ul class="aw-menu__list  aw-menu__list--sublist">
+            <li class="aw-menu__item  aw-menu__item--link "><a href="pesquisa-produtos.html">Lista de usuários</a></li>
+          </ul>
+        </li>
+
+        <li class="aw-menu__item  is-active is-expanded">
+          <a href="#">
+            <i class="fa  fa-fw  fa-file-text"></i><span>Compras</span>
+            <i class="aw-menu__navigation-icon  fa"></i>
+          </a>
+      
+          <ul class="aw-menu__list  aw-menu__list--sublist">
+            <li class="aw-menu__item  aw-menu__item--link"><a href="pesquisa-produtos.html">Lista de compras</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+		</div>
+	</aside>
+			</div>
+			<div class="container col-md-8">
+				
+				<div class="row">
+				<h3 class="title-pag">Cadastro de produtos</h2>
+					<div class="col-md-12">
+						
+						<div class="billing-details">
+							<div class="section-title">
+								<h3 class="title">Novo produto</h3>
+							</div>
+						<form method="POST" action="#">
+						<div class="row">
+							<div class="form-group">
+								<label class="form-group">Nome completo</label>
+								<input class="form-control" type="text" name="nome" placeholder="Digite seu nome completo">
+							</div>
+							<div class="form-group col-md-4">
+								<label class="form-group">Preço</label>
+								<input class="form-control" type="number" name="preco" placeholder="Digite o preço">
+							</div>
+							<div class="form-group col-md-4">
+								<label class="form-group">Quantidade</label>
+								<input class="form-control" type="number" name="quantidade" placeholder="Digite a quantidade...">
+							</div>
+							<div class="form-group col-md-4">
+								<label class="form-group">Categoria</label>
+								
+								<select class="form-control" name="categoria">
+									<option value="">Selecione a categoria</option>
+									<option value="notebooks">Notebooks</option>
+									<option value="teclados">Teclados</option>
+									<option value="mouses">Mouses</option>
+									<option value="hardwares">Hardwares</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								<label class="form-group">Descrição</label>
+								<textarea class="descricao" name="descricao" placeholder="Digite uma descrição para o produto...">
+
+								</textarea>
+							</div>
+							<div class="form-group">
+								<label class="form-group">Detalhes</label>
+								<textarea class="descricao" name="detalhes" placeholder="Digite os detalhes do produto...">
+
+								</textarea>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-12 form-group"><button type="button" class="btn btn-default btn-block">Selecionar imagens</button></div>
+							</div>
+
+						</div>
+
+						<div class="row">
+							<div class="col-md-12">
+								
+								<div class="container-fluied">
+									<table class="table table-striped">
+										<th>Nome do arquivo</th>
+										<th>Imagem</th>
+										<tr>
+											<td><label>IMG-0001233.jpg</label></td>
+											<td><img class="produto-min" src="../public/img/notebook.png"></td>
+										</tr>
+										<tr>
+											<td><label>IMG-0001233.jpg</label></td>
+											<td><img class="produto-min" src="../public/img/notebook.png"></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="form-group">
+								<button class="primary-btn btn-block" type="submit" >Salvar produto</button>
+							</div>	
+						</div>	
+						</form>
+						</div>
+					</div>
+
+					
+					
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+
+		<!-- jQuery Plugins -->
+		<script src="../public/js/jquery.min.js"></script>
+		<script src="../public/js/bootstrap.min.js"></script>
+		<script src="../public/js/slick.min.js"></script>
+		<script src="../public/js/nouislider.min.js"></script>
+		<script src="../public/js/jquery.zoom.min.js"></script>
+		<script src="../public/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html lang="pt">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 
+		<title>InfoSupri</title>
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="../public/css/bootstrap.min.css"/>
+
+		<!-- Slick -->
+		<link type="text/css" rel="stylesheet" href="../public/css/slick.css"/>
+		<link type="text/css" rel="stylesheet" href="../public/css/slick-theme.css"/>
+
+		<!-- nouislider -->
+		<link type="text/css" rel="stylesheet" href="../public/css/nouislider.min.css"/>
+
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="../public/css/font-awesome.min.css">
+
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="../public/css/style.css"/>
+
+    </head>
+	<body>
+		
+		<header>		
+			
+			<div id="header">
+				
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3"></div>
+						<div class="col-md-4"></div>
+						<div class="col-md-2"></div>
+						<div class="col-md-3"><h5 style="color:white">Bem vindo, usuário logado.</h5></div>
+					</div>
+					<div class="row">
+						
+						<div class="col-md-2">
+							<div class="header-logo">
+								<a href="#" class="logo">
+									<img src="../public/img/logo.png" alt="">
+								</a>
+							</div>
+						</div>
+						
+
+						
+						<div class="col-md-7">
+							<div class="header-search">
+								<form method="GET" action="#">
+									<select class="input-select col-md-3">
+										<option value="0">Todas categorias</option>
+										<option value="1">Notebooks</option>
+										<option value="1">Teclados</option>
+										<option value="2">Mouses</option>
+										<option value="3">Hardwares</option>
+									</select>
+									<input class="input" placeholder="Digite sua pesquisa...">
+									<button class="search-btn">Pesquisar</button>
+								</form>
+							</div>
+						</div>
+						
+
+						
+						<div class="col-md-3 clearfix">
+							<div class="header-ctn">
+								
+								<div class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+										<i class="fa fa-shopping-cart"></i>
+										<span>Carrinho</span>
+										<div class="qty">0</div>
+									</a>
+									<div class="cart-dropdown">
+										<div class="cart-list">
+											<div class="product-widget">
+												<div class="product-img">
+													<img src="../public/img/notebook.png" alt="">
+												</div>
+												<div class="product-body">
+													<h3 class="product-name"><a href="#">Nome do produto</a></h3>
+													<h4 class="product-price">R$ 000.00</h4>
+												</div>
+												<button class="delete"><i class="fa fa-close"></i></button>
+											</div>
+
+										</div>
+										<div class="cart-summary">
+											<small>0 Item(s) selecionados</small>
+											<h5>SUBTOTAL: R$ 000.00</h5>
+										</div>
+										<div class="cart-btns">
+											<button class="primary-btn btn-block">Finalizar</button>
+										</div>
+									</div>
+								</div>
+								
+								
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</header>
+		
+
+		
+		
+		<div class="section">
+			
+			<div class="container">
+				
+				<div class="row">
+					
+					<div class="col-md-3">
+						<div class="shop">
+							<div class="shop-img">
+								<img src="../public/img/categorias/cat-notebook.png" alt="">
+							</div>
+							<div class="shop-body">
+								<h3>Notebooks</h3>
+								<a href="estoque.html" class="cta-btn">Visualizar <i class="fa fa-arrow-circle-right"></i></a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-3">
+						<div class="shop">
+							<div class="shop-img">
+								<img src="../public/img/categorias/cat-teclados.png" alt="">
+							</div>
+							<div class="shop-body">
+								<h3>Teclados</h3>
+								<a href="#" class="cta-btn">Visualizar <i class="fa fa-arrow-circle-right"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="shop">
+							<div class="shop-img">
+								<img src="../public/img/categorias/cat-mouses.png" alt="">
+							</div>
+							<div class="shop-body">
+								<h3>Mouses</h3>
+								<a href="#" class="cta-btn">Visualizar <i class="fa fa-arrow-circle-right"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="shop">
+							<div class="shop-img">
+								<img src="../public/img/categorias/cat-hardwares.png" alt="">
+							</div>
+							<div class="shop-body">
+								<h3>Hardwares</h3>
+								<a href="#" class="cta-btn">Visualizar <i class="fa fa-arrow-circle-right"></i></a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<div id="lista-produtos" class="section">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-2">
+					<h4>Lista de produtos</h4>
+				</div>
+			</div>
+			<div class="container">				
+						
+						<div class="row">
+							
+							<!-- produto -->
+							<div class="col-md-3 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="../public/img/notebook.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Categoria</p>
+										<h3 class="product-name"><a href="#">Nome do produto</a></h3>
+										<h4 class="product-price">$980.00</h4>						
+									</div>
+									<div class="add-to-cart">
+										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Adicionar ao carrinho</button>
+									</div>
+								</div>
+							</div>
+							
+							<!-- produto -->
+							<div class="col-md-3 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="../public/img/teclado.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Categoria</p>
+										<h3 class="product-name"><a href="#">Nome do produto</a></h3>
+										<h4 class="product-price">$980.00</h4>						
+									</div>
+									<div class="add-to-cart">
+										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Adicionar ao carrinho</button>
+									</div>
+								</div>
+							</div>
+
+							<!-- produto -->
+							<div class="col-md-3 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="../public/img/mouse.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Categoria</p>
+										<h3 class="product-name"><a href="#">Nome do produto</a></h3>
+										<h4 class="product-price">$980.00</h4>						
+									</div>
+									<div class="add-to-cart">
+										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Adicionar ao carrinho</button>
+									</div>
+								</div>
+							</div>
+
+							<!-- produto -->
+							<div class="col-md-3 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="../public/img/hardware.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Categoria</p>
+										<h3 class="product-name"><a href="#">Nome do produto</a></h3>
+										<h4 class="product-price">$980.00</h4>						
+									</div>
+									<div class="add-to-cart">
+										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Adicionar ao carrinho</button>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						
+
+						
+						<div class="store-filter clearfix">
+							<ul class="store-pagination">
+								<li class="active">1</li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+							</ul>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<footer id="footer">
+			
+			<div class="section">
+				
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-2">
+						</div>
+
+						<div class="col-md-3">
+							<div class="footer">
+								<h3 class="footer-title">Sobre nós</h3>
+								<p>Descrição da loja</p>
+								<ul class="footer-links">
+									<li><a href="#"><i class="fa fa-map-marker"></i>Endereço</a></li>
+									<li><a href="#"><i class="fa fa-phone"></i>(83)99900-7645</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>equipeacl@gmail.com</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="footer">
+								<h3 class="footer-title">Categorias</h3>
+								<ul class="footer-links">
+									<li><a href="#">Notebooks</a></li>
+									<li><a href="#">Teclados</a></li>
+									<li><a href="#">Mouses</a></li>
+									<li><a href="#">Hardwares</a></li>
+								</ul>
+							</div>
+						</div>
+
+						
+
+						<div class="col-md-3">
+							<div class="footer">
+								<h3 class="footer-title">Serviço</h3>
+								<ul class="footer-links">
+									<li><a href="login.html">Minha conta</a></li>
+									<li><a href="#">Visualizar carrinho</a></li>
+									<li><a href="#">Ajuda</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>				
+				</div>
+			</div>
+			
+
+			
+			<div id="bottom-footer" class="section">
+				<div class="container">
+					
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<span class="copyright">
+								
+								EquipeACL &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados.
+							
+							</span>
+						</div>
+					</div>
+						
+				</div>
+				
+			</div>
+			
+		</footer>
+		
+
+		<!-- jQuery Plugins -->
+		<script src="../public/js/jquery.min.js"></script>
+		<script src="../public/js/bootstrap.min.js"></script>
+		<script src="../public/js/slick.min.js"></script>
+		<script src="../public/js/nouislider.min.js"></script>
+		<script src="../public/js/jquery.zoom.min.js"></script>
+		<script src="../public/js/main.js"></script>
+
+	</body>
+</html>
