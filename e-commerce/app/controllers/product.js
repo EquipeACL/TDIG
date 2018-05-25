@@ -7,6 +7,5 @@ module.exports.estoque = function(application,req,res){
 }
 
 module.exports.produto = function(application,req,res){
-	//console.log(req.query);
 	res.render('produto');
 }

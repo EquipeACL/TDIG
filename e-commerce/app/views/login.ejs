@@ -1,84 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<!-- Google font -->
- 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
- 		<!-- Bootstrap -->
- 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
 
- 		<!-- Slick -->
- 		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
- 		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+	<!-- Slick -->
+	<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+	<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
 
- 		<!-- nouislider -->
- 		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+	<!-- nouislider -->
+	<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
 
- 		<!-- Font Awesome Icon -->
- 		<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 
- 		<!-- Custom stlylesheet -->
- 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css"/>
 
 
-    </head>
-	<body>
+</head>
+<body>
 	
+	
+	<div class="section">
 		
-		<div class="section">
+		<div class="container">
 			
-			<div class="container">
-						
-				<div class="row">
-					
-					<div class="col-md-4"></div>
-					<div id="login"  class="col-md-4">
-						<div class="row container">
-							<div class="col-md-4">
-								<a href="#" class="logo">
-									<img src="./img/logo-black.png" alt="">
-								</a>
-							</div>
-							
+			<% if(validacao.length > 0){ %>
+			<div class="alert alert-danger">
+				<strong>Atenção!</strong>
+				<ul>
+					<% for(var i = 0; i < validacao.length; i++) {%>
+					<li><%=validacao[i].msg%></li>
+					<% } %>
+				</ul>
+			</div>
+			<% } %>		
+			<div class="row">
+				
+				<div class="col-md-4"></div>
+				<div id="login"  class="col-md-4">
+					<div class="row container">
+						<div class="col-md-4">
+							<a href="#" class="logo">
+								<img src="./img/logo-black.png" alt="">
+							</a>
 						</div>
-						<div>
-							
-						<form method="POST" action="home.html">
+						
+					</div>
+					<div>
+						
+						<form method="POST" action="/autenticar">
 							<div class="form-group">
 								<label class="">Nome de usuário</label>
-								<input class="form-control" type="text" name="user-name" >
-								<label class="form-group erro">Usuário não cadastrado!</label><br>
+								<input class="form-control" type="text" id="login" name="login" >
 								<label class="">Senha</label>
-								<input class="form-control" type="password" name="senha">
-								<label class="form-group erro">Senha incorreta!</label><br>
+								<input class="form-control" type="password" id = "senha" name="senha">
 								<label class="">Mostrar senha </label>
 								<input type="checkbox" name="senha"><br>
 								<label class="">Não possui cadastro? <a href="cadastro-cliente.html">Clique aqui</a></label>
 								<button class="primary-btn btn-block" type="submit"> Entrar</button>
 							</div>
 						</form>
-						</div>
-					</div>				
-					<div class="col-md-4"></div>
-				</div>
-				
+					</div>
+				</div>				
+				<div class="col-md-4"></div>
 			</div>
 			
 		</div>
 		
+	</div>
+	
 
-		<!-- jQuery Plugins -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/slick.min.js"></script>
-		<script src="js/nouislider.min.js"></script>
-		<script src="js/jquery.zoom.min.js"></script>
-		<script src="js/main.js"></script>
+	<!-- jQuery Plugins -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/jquery.zoom.min.js"></script>
+	<script src="js/main.js"></script>
 
-	</body>
+</body>
 </html>

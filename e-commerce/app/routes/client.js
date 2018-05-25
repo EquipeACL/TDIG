@@ -10,6 +10,14 @@ module.exports = function(application){
 	application.get('/checkout', function(req,res){
 		application.app.controllers.client.checkout(application,req,res);
 	});
+
+	application.post('/autenticar', function(req,res){
+		application.app.controllers.client.autentica(application,req,res);
+	});
+
+	application.get('/sair', function(req,res){
+		application.app.controllers.client.logout(application,req,res);
+	});
 }
 
 
