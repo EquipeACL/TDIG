@@ -5,6 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		 <link rel="icon" href="img/icon.ico" type="image" sizes="128x128">
+		 <title>InfoSupri</title>
 
 		<!-- Google font -->
  		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
@@ -33,7 +35,16 @@
 		<div class="section">
 			
 			<div class="container">
-				
+				<% if(validacao.length > 0){ %>
+				<div class="alert alert-danger">
+					<strong>Atenção!</strong>
+					<ul>
+						<% for(var i = 0; i < validacao.length; i++) {%>
+						<li><%=validacao[i].msg%></li>
+						<% } %>
+					</ul>
+				</div>
+				<% } %>	
 				<div class="row">
 				<h3 class="title-pag">Pagina de cadastro</h2>
 					<div class="col-md-7">
@@ -42,30 +53,34 @@
 							<div class="section-title">
 								<h3 class="title">Criar conta</h3>
 							</div>
-						<form method="POST" action="#">
+						<form method="POST" action="/cadastro">
 							<div class="form-group">
 								<label class="form-group">Nome completo</label>
-								<input class="form-control" type="text" name="nome" placeholder="Digite seu nome completo">
+								<input class="form-control" type="text" value="<%=dadosForm.nome%>" id = "nome" name="nome" placeholder="Digite seu nome completo">
+							</div>
+							<div class="form-group">
+								<label class="form-group">CPF</label>
+								<input class="form-control" type="text" value="<%=dadosForm._id%>" id = "cpf" name="_id" placeholder="Digite seu Cpf">
 							</div>
 							<div class="form-group">
 								<label class="form-group">Telefone</label>
-								<input class="form-control" type="tel" name="tel" placeholder="Digite seu telefone">
+								<input class="form-control" type="tel" value="<%=dadosForm.tel%>" id ="tel" name="tel" placeholder="Digite seu telefone">
 							</div>
 							<div class="form-group">
 								<label class="form-group">Email</label>
-								<input class="form-control" type="email" name="email" placeholder="Digite seu email">
+								<input class="form-control" type="email" value="<%=dadosForm.email%>" id= "email" name="email" placeholder="Digite seu email">
 							</div>
 							<div class="form-group">
 								<label class="form-group">Nome de usuário</label>
-								<input class="form-control" type="text" name="username" placeholder="Digite o nome de usuário">
+								<input class="form-control" type="text" value="<%=dadosForm.login%>" id="login" name="login" placeholder="Digite o nome de usuário">
 							</div>
 							<div class="form-group">
 								<label class="form-group">Senha</label>
-								<input class="form-control" type="password" name="conf-senha" placeholder="Digite sua senha...">
+								<input class="form-control" type="password" id ="senha" name="senha" placeholder="Digite sua senha...">
 							</div>
 							<div class="form-group">
 								<label class="form-group">Confirmação de Senha</label>
-								<input class="form-control" type="password" name="cidade" placeholder="Confirme sua senha">
+								<input class="form-control" type="password" id="confsenha" name="confsenha" placeholder="Confirme sua senha">
 								<label class="erro">Senhas não conferem!</label>
 							</div>
 							<div class="form-group">
@@ -92,6 +107,6 @@
 		<script src="js/nouislider.min.js"></script>
 		<script src="js/jquery.zoom.min.js"></script>
 		<script src="js/main.js"></script>
-
+		<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
 	</body>
 </html>

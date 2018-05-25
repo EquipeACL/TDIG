@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+	<link rel="icon" href="img/icon.ico" type="image" sizes="128x128">
+	<title>InfoSupri</title>
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
@@ -61,12 +63,12 @@
 						<form method="POST" action="/autenticar">
 							<div class="form-group">
 								<label class="">Nome de usuário</label>
-								<input class="form-control" type="text" id="login" name="login" >
+								<input class="form-control" type="text" value="<%=dadosForm.login%>" id="login" name="login" >
 								<label class="">Senha</label>
 								<input class="form-control" type="password" id = "senha" name="senha">
 								<label class="">Mostrar senha </label>
 								<input type="checkbox" name="senha"><br>
-								<label class="">Não possui cadastro? <a href="cadastro-cliente.html">Clique aqui</a></label>
+								<label class="">Não possui cadastro? <a href="cadastrar_cliente">Clique aqui</a></label>
 								<button class="primary-btn btn-block" type="submit"> Entrar</button>
 							</div>
 						</form>

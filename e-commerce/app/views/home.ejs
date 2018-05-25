@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 
+		<link rel="icon" href="img/icon.ico" type="image" sizes="128x128">
 		<title>InfoSupri</title>
 
 		<!-- Google font -->
@@ -35,13 +36,17 @@
 				
 				<div class="container">
 					<div class="row">
-						<div class="col-md-3"></div>
-						<div class="col-md-4"></div>
-						<div class="col-md-2"></div>
 						<% if (msg==""){%>
-							<div class="col-md-3"><a href ="login" style="color:white">Fazer login</a></div>
+							<div class="col-md-3"></div>
+							<div class="col-md-4"></div>
+							<div class="col-md-3"></div>
+							<div class="col-md-2"><a href ="login" style="color:white">Fazer login</a></div>
 						<% } else { %>
+							
+							<div class="col-md-4"></div>
+							<div class="col-md-4"></div>	
 							<div class="col-md-3"><h5 style="color:white">Bem vindo(a), <%=msg%></h5></div>
+							<div class="col-md-1"><a href ="sair" style="color:white">Sair</a></div>
 						<% } %>
 					</div>
 					<div class="row">

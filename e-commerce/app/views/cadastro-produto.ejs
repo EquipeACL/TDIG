@@ -6,6 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+		<link rel="icon" href="img/icon.ico" type="image" sizes="128x128">
+		<title>InfoSupri</title>
+
 		<!-- Google font -->
  		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
@@ -44,7 +47,11 @@
 					  	</div>
 					</div>
 						<div class="col-md-3"></div>					
-						<div class="col-md-3"><h5 style="color:white">Bem vindo, usuário logado.</h5></div>
+						<% if (msg==""){%>
+							<div class="col-md-3"><a href ="login" style="color:white">Fazer login</a></div>
+						<% } else { %>
+							<div class="col-md-3"><h5 style="color:white">Bem vindo(a), <%=msg%></h5></div>
+						<% } %>
 					</div>
 			</div>
 		</header>
