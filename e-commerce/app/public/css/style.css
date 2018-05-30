@@ -17,6 +17,53 @@ a {
   transition: 0.2s color;
 }
 
+.debito-sim{
+  background-color: #D10024;
+  color: rgb(253, 253, 253);
+  font-weight: 700;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.debito-nao{
+  background-color: rgb(35, 209, 0);
+  color: rgb(246, 247, 250);
+  font-weight: 700;
+  margin: 0 0 10px;
+  text-align: center;
+}
+.compra-aberta{
+  background-color: #D10024;
+  color: rgb(253, 253, 253);
+  font-weight: 700;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.compra-fechada{
+  background-color: rgb(35, 209, 0);
+  color: rgb(246, 247, 250);
+  font-weight: 700;
+  margin: 0 0 10px;
+  text-align: center;
+}
+.produtos-compra{
+  background: #FFF;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 0px 2px #E4E7ED;
+  box-shadow: 0px 0px 0px 2px #E4E7ED;
+  z-index: 99;
+  right: 0;
+}
+.produtos-compra .itens-produto {
+  max-height: 60px;
+  overflow-y: scroll;
+}
+.produtos-compra .itens-produto .cada-item {
+  padding: 0px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 a:hover, a:focus {
   color: #D10024;
   text-decoration: none;
@@ -234,7 +281,7 @@ ul, ol {
 
 .primary-btn {
   display: inline-block;
-  padding: 12px 30px;
+  padding: 10px 20px;
   background-color: #D10024;
   border: none;
   border-radius: 40px;

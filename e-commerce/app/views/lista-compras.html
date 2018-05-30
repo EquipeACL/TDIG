@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <link rel="icon" href="img/icon.ico" type="image" sizes="128x128">
+    <title>InfoSupri</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="../public/css/bootstrap.min.css" />
+
+    <!-- Slick -->
+    <link type="text/css" rel="stylesheet" href="../public/css/slick.css" />
+    <link type="text/css" rel="stylesheet" href="../public/css/slick-theme.css" />
+
+    <!-- nouislider -->
+    <link type="text/css" rel="stylesheet" href="../public/css/nouislider.min.css" />
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="../public/css/font-awesome.min.css">
+
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="../public/css/style.css" />
+
+
+</head>
+
+<body>
+
+    <div class="section">
+
+        <div class="container col-md-2">
+            <nav class="aw-menu  js-menu">
+                <ul class="aw-menu__list">
+
+                    <li class="aw-menu__item  is-active is-expanded">
+                        <a href="#">
+                            <i class="fa  fa-fw  fa-file-text"></i>
+                            <span>Produtos</span>
+                            <i class="aw-menu__navigation-icon  fa"></i>
+                        </a>
+
+                        <ul class="aw-menu__list  aw-menu__list--sublist">
+                            <li class="aw-menu__item  aw-menu__item--link">
+                                <a href="cadastro-produto.html">Cadastro de produto</a>
+                            </li>
+                            <li class="aw-menu__item  aw-menu__item--link ">
+                                <a href="pesquisa-produtos.html">Pesquisa de produtos</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="aw-menu__item  is-active is-expanded">
+                        <a href="#">
+                            <i class="fa  fa-fw  fa-file-text"></i>
+                            <span>Categoria</span>
+                            <i class="aw-menu__navigation-icon  fa"></i>
+                        </a>
+
+                        <ul class="aw-menu__list  aw-menu__list--sublist">
+                            <li class="aw-menu__item  aw-menu__item--link">
+                                <a href="cadastro-produto.html">Cadastro de categoria</a>
+                            </li>
+                            <li class="aw-menu__item  aw-menu__item--link ">
+                                <a href="pesquisa-produtos.html">Pesquisa de categoria</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="aw-menu__item  is-active is-expanded">
+                        <a href="#">
+                            <i class="fa  fa-fw  fa-file-text"></i>
+                            <span>Usuários</span>
+                            <i class="aw-menu__navigation-icon  fa"></i>
+                        </a>
+
+                        <ul class="aw-menu__list  aw-menu__list--sublist">
+                            <li class="aw-menu__item  aw-menu__item--link ">
+                                <a href="pesquisa-produtos.html">Lista de usuários</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="aw-menu__item  is-active is-expanded">
+                        <a href="#">
+                            <i class="fa  fa-fw  fa-file-text"></i>
+                            <span>Compras</span>
+                            <i class="aw-menu__navigation-icon  fa"></i>
+                        </a>
+
+                        <ul class="aw-menu__list  aw-menu__list--sublist">
+                            <li class="aw-menu__item  aw-menu__item--link">
+                                <a href="pesquisa-produtos.html">Lista de compras</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        </aside>
+    </div>
+    <div class="container col-md-10">
+        <div class="row">
+            <h3 class="title-pag">Lista de compras</h3>
+            <div class="col-md-12">
+
+                <div class="billing-details">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <input class="form-control" type="text" placeholder="Digite sua pesquisa...">
+                            </div>
+                            <div class="col-md-2"></div>
+                            <button class="primary-btn btn-sm">Pesquisar</button>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div class="container-fluied">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Produto - Categoria - Preço</th>
+                        <th>Total</th>
+                        <th>Cliente</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="produtos-compra col-md-5">
+                            <div class="itens-produto">
+                                <div class="cada-item">Notebook Lenovo - Notebook - R$ 1.500,000</div>
+                                <div class="cada-item">Teclado Samsumg - Mouse - R$ 25,000</div>
+                                <div class="cada-item">Mouse Multilaser - Teclado - R$ 58,000</div>
+                                <div class="cada-item">Placa de Rede Ethernet - Hardware - R$ 260,000</div>
+                                <div class="cada-item">Notebook Lenovo - Notebook - R$ 1.500,000</div>
+                            </div>
+                        </td>
+                        <td>R$ 230,00</td>
+                        <td>Adalcino Junior</td>
+                        <td>
+                            <div class="compra-aberta">ABERTA</div>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td class="produtos-compra col-md-5">
+                                <div class="itens-produto">
+                                    <div class="cada-item">Notebook Lenovo - Notebook - R$ 1.500,000</div>
+                                    <div class="cada-item">Teclado Samsumg - Mouse - R$ 25,000</div>
+                                    <div class="cada-item">Mouse Multilaser - Teclado - R$ 58,000</div>
+                                    <div class="cada-item">Placa de Rede Ethernet - Hardware - R$ 260,000</div>
+                                    <div class="cada-item">Notebook Lenovo - Notebook - R$ 1.500,000</div>
+                                </div>
+                            </td>
+                            <td>R$ 230,00</td>
+                            <td>Lucas Cosmo</td>
+                            <td>
+                                <div class="compra-fechada">FECHADA</div>
+                            </td>
+                        </tr>
+                    
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+
+    <!-- jQuery Plugins -->
+    <script src="../public/js/jquery.min.js"></script>
+    <script src="../public/js/bootstrap.min.js"></script>
+    <script src="../public/js/slick.min.js"></script>
+    <script src="../public/js/nouislider.min.js"></script>
+    <script src="../public/js/jquery.zoom.min.js"></script>
+    <script src="../public/js/main.js"></script>
+
+</body>
+
+</html>
