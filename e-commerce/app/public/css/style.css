@@ -69,7 +69,9 @@ a:hover, a:focus {
   text-decoration: none;
   outline: none;
 }
-
+.disabilitado{
+  
+}
 ul, ol {
   margin: 0;
   padding: 0;
