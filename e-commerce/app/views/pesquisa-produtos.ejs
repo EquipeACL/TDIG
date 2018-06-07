@@ -14,27 +14,51 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
   <!-- Bootstrap -->
-  <link type="text/css" rel="stylesheet" href="../public/css/bootstrap.min.css" />
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
 
   <!-- Slick -->
-  <link type="text/css" rel="stylesheet" href="../public/css/slick.css" />
-  <link type="text/css" rel="stylesheet" href="../public/css/slick-theme.css" />
+  <link type="text/css" rel="stylesheet" href="css/slick.css" />
+  <link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
 
   <!-- nouislider -->
-  <link type="text/css" rel="stylesheet" href="../public/css/nouislider.min.css" />
+  <link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
 
   <!-- Font Awesome Icon -->
-  <link rel="stylesheet" href="../public/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
 
   <!-- Custom stlylesheet -->
-  <link type="text/css" rel="stylesheet" href="../public/css/style.css" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
 
 
 </head>
 
 <body>
-
-    <div class="section">
+<header>
+			<div id="header" class="row">
+					<div class="row">
+					<div class="container-fluied">
+						<div class="col-md-2">
+							<a href="#" style="padding-left: 50px">
+								<img alt="InfoSupri" src="./img/logo.png"/>
+							</a>
+						</div>
+						<div class="col-md-2">
+							<ul class="nav  navbar-nav">
+								<li><a href="#" class="js-sidebar-toggle"><i class="fa  fa-bars"></i></a></li>
+							</ul>
+					  	</div>
+					</div>
+						<div class="col-md-3"></div>					
+						<% if (msg==""){%>
+							<div class="col-md-3"><a href ="login" style="color:white">Fazer login</a></div>
+						<% } else { %>
+							<div class="col-md-3"><h5 style="color:white">Bem vindo(a), <%=msg%></h5></div>
+						<% } %>
+					</div>
+			</div>
+		</header>
+		
+		<div class="section">
 
         <div class="container col-md-2">
             <nav class="aw-menu  js-menu">
@@ -49,11 +73,11 @@
 
                         <ul class="aw-menu__list  aw-menu__list--sublist">
                             <li class="aw-menu__item  aw-menu__item--link">
-                                <a href="cadastro-produto.html">
+                                <a href="/cadastrar_produto">
                                     <i class="fa fa-plus" aria-hidden="true"></i>Cadastro</a>
                             </li>
                             <li class="aw-menu__item  aw-menu__item--link ">
-                                <a href="pesquisa-produtos.html">
+                                <a href="/pesquisar_produtos">
                                     <i class="fa fa-search" aria-hidden="true"></i>Pesquisa</a>
                             </li>
                         </ul>
@@ -68,11 +92,11 @@
 
                         <ul class="aw-menu__list  aw-menu__list--sublist">
                             <li class="aw-menu__item  aw-menu__item--link">
-                                <a href="cadastro-produto.html">
+                                <a href="/cadastrar_categoria">
                                     <i class="fa fa-plus" aria-hidden="true"></i>Cadastro</a>
                             </li>
                             <li class="aw-menu__item  aw-menu__item--link ">
-                                <a href="pesquisa-produtos.html">
+                                <a href="/cadastrar_categoria">
                                     <i class="fa fa-search" aria-hidden="true"></i>Pesquisa</a>
                             </li>
                         </ul>
@@ -87,7 +111,7 @@
 
                         <ul class="aw-menu__list  aw-menu__list--sublist">
                             <li class="aw-menu__item  aw-menu__item--link ">
-                                <a href="pesquisa-produtos.html">
+                                <a href="/listar_clientes">
                                     <i class="fa fa-list-ol" aria-hidden="true"></i>Lista de usuários</a>
                             </li>
                         </ul>
@@ -102,7 +126,7 @@
 
                         <ul class="aw-menu__list  aw-menu__list--sublist">
                             <li class="aw-menu__item  aw-menu__item--link">
-                                <a href="pesquisa-produtos.html">
+                                <a href="/listar_compras">
                                     <i class="fa fa-list-ol" aria-hidden="true"></i>Lista de compras</a>
                             </li>
                         </ul>
@@ -183,12 +207,12 @@
   </div>
 
   <!-- jQuery Plugins -->
-  <script src="../public/js/jquery.min.js"></script>
-  <script src="../public/js/bootstrap.min.js"></script>
-  <script src="../public/js/slick.min.js"></script>
-  <script src="../public/js/nouislider.min.js"></script>
-  <script src="../public/js/jquery.zoom.min.js"></script>
-  <script src="../public/js/main.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/nouislider.min.js"></script>
+  <script src="js/jquery.zoom.min.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 

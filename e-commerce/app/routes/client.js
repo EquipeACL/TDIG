@@ -19,6 +19,14 @@ module.exports = function(application){
 		application.app.controllers.client.cadastrar(application,req,res);
 	});
 
+	application.get('/meus-pedidos', function(req, res){
+		application.app.controllers.client.meuspedidos(application,req,res);
+	});
+
+	application.get('/minha-conta', function(req, res){
+		application.app.controllers.client.minhaconta(application,req,res);
+	});
+
 	application.get('/sair', function(req,res){
 		application.app.controllers.client.logout(application,req,res);
 	});

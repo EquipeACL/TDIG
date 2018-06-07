@@ -2,12 +2,32 @@ module.exports.login = function(application,req,res){
 	res.render('login',{validacao:{}, dadosForm:{}});
 }
 
+module.exports.meuspedidos = function(application,req,res){
+	if(req.session.nome==undefined){
+		res.render('home', {msg:""});
+		return;
+	}
+	res.render('meus-pedidos',{msg:req.session.nome});		
+}
+
+module.exports.minhaconta = function(application,req,res){
+	if(req.session.nome==undefined){
+		res.render('home', {msg:""});
+		return;
+	}
+	res.render('minha-conta',{msg:req.session.nome});		
+}
+
 module.exports.cadastro = function(application,req,res){
 	res.render('cadastro-cliente', {validacao:{},dadosForm:{}});
 }
 
 module.exports.checkout = function(application,req,res){
-	res.render('checkout');
+	if(req.session.nome==undefined){
+		res.render('acesso-negado', {msg:""});
+		return;
+	}
+	res.render('checkout',{msg:req.session.nome});
 }
 
 module.exports.autenticar = function(application,req,res){

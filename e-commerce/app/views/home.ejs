@@ -30,131 +30,7 @@
     </head>
 	<body>
 		
-		<header>		
-			
-			<div id="header">
-				
-				<div class="container">
-					<div class="row">
-						<% if (msg==""){%>
-							<div class="col-md-3"></div>
-							<div class="col-md-4"></div>
-							<div class="col-md-3"></div>
-							<div class="col-md-2"><a href ="login" style="color:white">Fazer login</a></div>
-						<% } else { %>
-							
-							<div class="col-md-4"></div>
-							<div class="col-md-4"></div>	
-							<div class="col-md-3"><h5 style="color:white">Bem vindo(a), <%=msg%></h5></div>
-							<div class="col-md-1"><a href ="sair" style="color:white">Sair</a></div>
-						<% } %>
-					</div>
-					<div class="row">
-						
-						<div class="col-md-2">
-							<div class="header-logo">
-								<a href="#" class="logo">
-									<img src="./img/logo.png" alt="">
-								</a>
-							</div>
-						</div>
-						
-
-						
-						<div class="col-md-7">
-							<div class="header-search">
-								<form method="GET" action="#">
-									<select class="input-select col-md-3">
-										<option value="0">Todas categorias</option>
-										<option value="1">Notebooks</option>
-										<option value="1">Teclados</option>
-										<option value="2">Mouses</option>
-										<option value="3">Hardwares</option>
-									</select>
-									<input class="input" placeholder="Digite sua pesquisa...">
-									<button class="search-btn">Pesquisar</button>
-								</form>
-							</div>
-						</div>
-						
-
-						
-						<div class="col-md-3 clearfix">
-							<div class="header-ctn">
-								<div class="dropdown">
-									<a href="/meuspedidos">
-										<i class="fa fa-list"></i>
-										<span>Meus Pedidos</span>
-									</a>
-								</div>
-							</div>
-
-							<div class="header-ctn">
-								
-								<div class="dropdown">
-									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-										<i class="fa fa-shopping-cart"></i>
-										<span>Carrinho</span>
-										<div class="qty">0</div>
-									</a>
-									<div class="cart-dropdown">
-										<div class="cart-list">
-											<div class="product-widget">
-												<div class="product-img">
-													<img src="./img/notebook.png" alt="">
-												</div>
-												<div class="product-body">
-													<h3 class="product-name"><a href="#">Nome do produto</a></h3>
-													<h4 class="product-price">R$ 000.00</h4>
-												</div>
-												<button class="delete"><i class="fa fa-close"></i></button>
-											</div>
-											<div class="product-widget">
-													<div class="product-img">
-														<img src="./img/notebook.png" alt="">
-													</div>
-													<div class="product-body">
-														<h3 class="product-name"><a href="#">Nome do produto</a></h3>
-														<h4 class="product-price">R$ 000.00</h4>
-													</div>
-													<button class="delete"><i class="fa fa-close"></i></button>
-											</div>
-											<div class="product-widget">
-													<div class="product-img">
-														<img src="./img/notebook.png" alt="">
-													</div>
-													<div class="product-body">
-														<h3 class="product-name"><a href="#">Nome do produto</a></h3>
-														<h4 class="product-price">R$ 000.00</h4>
-													</div>
-													<button class="delete"><i class="fa fa-close"></i></button>
-											</div>
-
-										</div>
-										<div class="cart-summary">
-											<small>0 Item(s) selecionados</small>
-											<h5>SUBTOTAL: R$ 000.00</h5>
-										</div>
-										<div class="cart-btns">
-											<button class="primary-btn btn-block">Finalizar</button>
-										</div>
-									</div>
-								</div>
-								
-								
-							</div>
-						</div>
-						
-					</div>
-					
-				</div>
-				
-			</div>
-			
-		</header>
-		
-
-		
+		<% include header %>
 		
 		<div class="section">
 			
@@ -236,7 +112,7 @@
 									<div class="product-body">
 										<p class="product-category">Categoria</p>
 										<h3 class="product-name"><a href="#">Nome do produto</a></h3>
-										<h4 class="product-price">$980.00</h4>						
+										<h4 class="product-price">R$980.00</h4>						
 									</div>
 									<div class="add-to-cart">
 										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Adicionar ao carrinho</button>
@@ -253,7 +129,7 @@
 									<div class="product-body">
 										<p class="product-category">Categoria</p>
 										<h3 class="product-name"><a href="#">Nome do produto</a></h3>
-										<h4 class="product-price">$980.00</h4>						
+										<h4 class="product-price">R$980.00</h4>						
 									</div>
 									<div class="add-to-cart">
 										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Adicionar ao carrinho</button>
@@ -270,7 +146,7 @@
 									<div class="product-body">
 										<p class="product-category">Categoria</p>
 										<h3 class="product-name"><a href="#">Nome do produto</a></h3>
-										<h4 class="product-price">$980.00</h4>						
+										<h4 class="product-price">R$980.00</h4>						
 									</div>
 									<div class="add-to-cart">
 										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Adicionar ao carrinho</button>
@@ -287,7 +163,7 @@
 									<div class="product-body">
 										<p class="product-category">Categoria</p>
 										<h3 class="product-name"><a href="#">Nome do produto</a></h3>
-										<h4 class="product-price">$980.00</h4>						
+										<h4 class="product-price">R$980.00</h4>						
 									</div>
 									<div class="add-to-cart">
 										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Adicionar ao carrinho</button>
@@ -317,75 +193,7 @@
 			
 		</div>
 		
-		<footer id="footer">
-			
-			<div class="section">
-				
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-2">
-						</div>
-
-						<div class="col-md-3">
-							<div class="footer">
-								<h3 class="footer-title">Sobre nós</h3>
-								<p>Descrição da loja</p>
-								<ul class="footer-links">
-									<li><a href="#"><i class="fa fa-map-marker"></i>Endereço</a></li>
-									<li><a href="#"><i class="fa fa-phone"></i>(83)99900-7645</a></li>
-									<li><a href="#"><i class="fa fa-envelope-o"></i>equipeacl@gmail.com</a></li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="col-md-3">
-							<div class="footer">
-								<h3 class="footer-title">Categorias</h3>
-								<ul class="footer-links">
-									<li><a href="#">Notebooks</a></li>
-									<li><a href="#">Teclados</a></li>
-									<li><a href="#">Mouses</a></li>
-									<li><a href="#">Hardwares</a></li>
-								</ul>
-							</div>
-						</div>
-
-						
-
-						<div class="col-md-3">
-							<div class="footer">
-								<h3 class="footer-title">Serviço</h3>
-								<ul class="footer-links">
-									<li><a href="login.html">Minha conta</a></li>
-									<li><a href="#">Visualizar carrinho</a></li>
-									<li><a href="#">Ajuda</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>				
-				</div>
-			</div>
-			
-
-			
-			<div id="bottom-footer" class="section">
-				<div class="container">
-					
-					<div class="row">
-						<div class="col-md-12 text-center">
-							<span class="copyright">
-								
-								EquipeACL &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados.
-							
-							</span>
-						</div>
-					</div>
-						
-				</div>
-				
-			</div>
-			
-		</footer>
+		<% include footer %>
 		
 
 		<!-- jQuery Plugins -->
